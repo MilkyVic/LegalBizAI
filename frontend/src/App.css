@@ -1,0 +1,49 @@
+/* App.css hoặc index.css */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.flex-grow {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+head, .navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 50;
+  background-color: white; /* hoặc màu nền bạn muốn */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem; /* Đảm bảo nội dung không bị che bởi NavBar */
+}
+
+.fixed-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 100; /* Đảm bảo footer nằm trên các phần khác */
+  background-color: white; /* Hoặc màu nền bạn muốn */
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Tạo bóng cho footer */
+}
+
+@media (max-width: 1024px) {
+  .hide-on-small-screen {
+    display: none;
+  }
+}

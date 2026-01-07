@@ -1,0 +1,16 @@
+# Data Exclusions 
+data/raw
+data/processed/finetune/fine_tune_data.training_data_cleaned_af.json
+backend/model
+# Tool Exclusions
+data/src/generaltools/tools_checkID/old
+data/src/generaltools/tools_checkID/new/id_cof_fl_point.py
+data/src/generaltools/tools_checkID/new/id_cof_fl_article.py
+data/src/generaltools/tools_checkID/new/id_cof_clause.py
+backend/retrieval/embedding
+# System and Build Files
+.DS_Store
+**/node_modules/
+.vite
+dist
+fullstack-env
